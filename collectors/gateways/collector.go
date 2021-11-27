@@ -77,7 +77,7 @@ func NewCollector(hiloClient *hilo.Hilo) *Collector {
 		hiloClient: hiloClient,
 		gatewayZigbeePairingActivated: prometheus.NewDesc(
 			"hilo_gateway_peering_activated",
-			"",
+			"Current gateway peering state",
 			[]string{"location_id", "location_name"},
 			nil,
 		),
@@ -89,13 +89,13 @@ func NewCollector(hiloClient *hilo.Hilo) *Collector {
 		),
 		gatewayFirmwareVersion: prometheus.NewDesc(
 			"hilo_gateway_firmware_version",
-			"",
+			"Gateway firmware version (stored in the firmware_version label)",
 			[]string{"location_id", "location_name", "firmware_version"},
 			nil,
 		),
 		gatewayZigbeeChannel: prometheus.NewDesc(
 			"hilo_gateway_zigbee_channel",
-			"",
+			"Current gateway zigbee channel",
 			[]string{"location_id", "location_name"},
 			nil,
 		),

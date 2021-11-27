@@ -103,13 +103,13 @@ func NewCollector(hiloClient *hilo.Hilo) *Collector {
 	e := &Collector{
 		hiloClient: hiloClient,
 		thermostatCurrentTemperature: prometheus.NewDesc(
-			"hilo_thermostat_current_temperature_celcius",
+			"hilo_thermostat_current_temperature_celsius",
 			"Thermostat current temperature",
 			[]string{"location_id", "location_name", "device_id", "device_name"},
 			nil,
 		),
 		thermostatTargetTemperature: prometheus.NewDesc(
-			"hilo_thermostat_target_temperature_celcius",
+			"hilo_thermostat_target_temperature_celsius",
 			"Thermostat target temperature",
 			[]string{"location_id", "location_name", "device_id", "device_name"},
 			nil,

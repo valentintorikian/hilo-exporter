@@ -5,7 +5,7 @@
 ## Introduction
 
 This is a (partial) Prometheus exporter that exposes basic attribute about Hilo's thermostats and gateway using Hilo's
-API
+API.
 
 ### Features
 
